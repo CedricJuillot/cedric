@@ -26,51 +26,49 @@
             line-height: 1.7;
         }
 
-        /* HEADER */
-header {
-    background: #aaa39f;
-    color: black;
-    padding: 15px 20px;
-}
 
-.header-inner {
-    max-width: 1050px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* =========================
+           HEADER
+        ========================= */
 
-/* LOGO */
-.logo img {
-    height: 100px;
-    width: auto;
-    display: block;
-}
+        header {
+            background: #aaa39f;
+            color: black;
+            padding: 12px 40px;
+        }
 
-/* NAVIGATION */
-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+        .header-inner {
+            max-width: 1050px;
+            margin: 0 auto;
 
-nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: opacity 0.2s ease;
-}
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
 
-nav a:hover {
-    opacity: 0.7;
-}
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
 
-nav a.active {
-    opacity: 0.6;
-}
+        nav a {
+            color: black;
+            text-decoration: underline;
+            font-size: 15px;
+        }
 
-        /* HERO */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
         .hero {
             background: #aaa39f;
             color: black;
@@ -95,79 +93,11 @@ nav a.active {
             font-size: 1.05rem;
         }
 
-/*Navigation*/
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-}
 
-nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: opacity 0.2s ease;
-}
+        /* =========================
+           CONTENT
+        ========================= */
 
-nav a:hover {
-    opacity: 0.7;
-}
-
-nav a.active {
-    opacity: 0.6;
-}
-
-        /* HERO */
-        .hero {
-            background: #aaa39f;
-            color: black;
-            padding: 50px 20px 75px;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(2.4rem, 6vw, 4rem);
-            font-weight: 400;
-            margin-bottom: 18px;
-        }
-
-        .hero p {
-            color: black;
-            font-size: 1.05rem;
-        }
-
-/*Navigation*/
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: opacity 0.2s ease;
-}
-
-nav a:hover {
-    opacity: 0.7;
-}
-
-nav a.active {
-    opacity: 0.6;
-}
-
-
-        /* CONTENT */
         main {
             max-width: 900px;
             margin: 0 auto;
@@ -179,6 +109,7 @@ nav a.active {
             padding: 35px 40px;
             margin-bottom: 24px;
             border-radius: 10px;
+
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.035);
         }
 
@@ -194,8 +125,10 @@ nav a.active {
         .section h2::after {
             content: "";
             display: block;
+
             width: 45px;
             height: 2px;
+
             background: #aaa39f;
             margin-top: 12px;
         }
@@ -207,6 +140,11 @@ nav a.active {
         .section p:last-child {
             margin-bottom: 0;
         }
+
+
+        /* =========================
+           KONTAKTBOX
+        ========================= */
 
         .contact-box {
             background: #f7f5f0;
@@ -229,419 +167,478 @@ nav a.active {
             text-decoration: underline;
         }
 
-        .placeholder {
-            color: #aaa39f;
-            font-weight: 600;
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #aaa39f;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
 
-        /* FOOTER */
-footer {
-    background: #aaa39f;
-    color: black;
-    padding: 35px 20px;
-    text-align: center;
-}
+        footer p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
 
-.footer-inner {
-    max-width: 900px;
-    margin: 0 auto;
-}
+        footer p:last-child {
+            margin-bottom: 0;
+        }
 
-footer p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-}
+        footer a {
+            color: black;
+            margin: 0 8px;
+            text-decoration: none;
+        }
 
-footer a {
-    color: black;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+        footer a:hover {
+            text-decoration: underline;
+        }
 
 
-/* PFEIL NACH OBEN */
-#backToTop {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
+        /* =========================
+           PFEIL NACH OBEN
+        ========================= */
 
-    width: 45px;
-    height: 45px;
+        #backToTop {
+            position: fixed;
 
-    border: none;
-    border-radius: 50%;
+            right: 25px;
+            bottom: 25px;
 
-    background: #aaa39f;
-    color: black;
+            width: 45px;
+            height: 45px;
 
-    font-size: 24px;
-    line-height: 1;
+            border: none;
+            border-radius: 50%;
 
-    display: none;
-    align-items: center;
-    justify-content: center;
+            background: #aaa39f;
+            color: black;
 
-    cursor: pointer;
+            font-size: 24px;
+            line-height: 1;
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+            align-items: center;
+            justify-content: center;
 
-    z-index: 9999;
+            cursor: pointer;
 
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
-#backToTop:hover {
-    transform: translateY(-3px);
-}
+            z-index: 9999;
 
-/* MOBILE */
-@media (max-width: 700px) {
+            transition: transform 0.2s ease;
+        }
 
-    header {
-        padding: 15px 15px 20px;
-    }
+        #backToTop:hover {
+            transform: translateY(-3px);
+        }
 
-    .header-inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-    .logo img {
-        height: 75px;
-        max-width: 100%;
-    }
+        /* =========================
+           MOBILE
+        ========================= */
 
-    nav {
-        width: 100%;
-        justify-content: center;
-        gap: 12px;
-        margin-top: 15px;
-        flex-wrap: wrap;
-    }
+        @media (max-width: 700px) {
 
-    nav a {
-        font-size: 0.9rem;
-    }
+            header {
+                padding: 10px 15px;
+            }
 
-    .hero {
-        padding: 45px 18px 50px;
-    }
+            .header-inner {
+                justify-content: flex-end;
+            }
 
-    .hero h1 {
-        font-size: 2.2rem;
-    }
+            nav {
+                gap: 12px;
+                flex-wrap: wrap;
+            }
 
-    .hero p {
-        font-size: 1rem;
-    }
+            nav a {
+                font-size: 14px;
+            }
 
-    main {
-        padding: 35px 12px 50px;
-    }
 
-    .section {
-        padding: 25px 20px;
-        margin-bottom: 18px;
-        border-radius: 8px;
-    }
+            .hero {
+                padding: 45px 18px 50px;
+            }
 
-    .section h2 {
-        font-size: 1.35rem;
-    }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
 
-    .section p,
-    .section li {
-        font-size: 0.95rem;
-    }
+            .hero p {
+                font-size: 1rem;
+            }
 
-    .contact-box {
-        padding: 18px;
-        overflow-wrap: break-word;
-    }
 
-   /* FOOTER */
-footer {
-    background: #aaa39f;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
+            main {
+                padding: 35px 12px 50px;
+            }
 
-footer a {
-    color: black;
-    margin: 0 8px;
-}
+            .section {
+                padding: 25px 20px;
+                margin-bottom: 18px;
+                border-radius: 8px;
+            }
 
-    #backToTop {
-        width: 42px;
-        height: 42px;
-        right: 15px;
-        bottom: 15px;
-        font-size: 21px;
-    }
-}
-       
+            .section h2 {
+                font-size: 1.35rem;
+            }
+
+            .section p,
+            .section li {
+                font-size: 0.95rem;
+            }
+
+
+            .contact-box {
+                padding: 18px;
+                overflow-wrap: break-word;
+                word-break: break-word;
+            }
+
+
+            footer {
+                padding: 20px 15px;
+            }
+
+            footer p {
+                font-size: 0.85rem;
+                line-height: 1.7;
+            }
+
+
+            #backToTop {
+                width: 42px;
+                height: 42px;
+
+                right: 15px;
+                bottom: 15px;
+
+                font-size: 21px;
+            }
+        }
     </style>
 </head>
 
+
 <body>
 
-<!--Header-->
-<header>
-    <div class="header-inner">
 
-        <a href="index.html" class="logo">
-            <img src="pictures/logo_transparent.png" alt="Cédric Juillot – Mietkoch">
-        </a>
+    <!-- =========================
+         HEADER
+    ========================= -->
 
-        <nav>
-            <a href="index.html">Zurück zur Startseite</a>
-        </nav>
+    <header>
 
-    </div>
-</header>
+        <div class="header-inner">
 
+            <nav>
+                <a href="index.html">
+                    Zurück zur Startseite
+                </a>
+            </nav>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Impressum</h1>
-        <p>
-            Angaben gemäß § 5 DDG
-        </p>
-    </div>
-</section>
+        </div>
+
+    </header>
 
 
-<main>
+    <!-- =========================
+         HERO
+    ========================= -->
 
-    <!-- Anbieter -->
-    <section class="section">
+    <section class="hero">
 
-        <h2>Angaben zum Anbieter</h2>
+        <div class="hero-content">
 
-        <p>
-            Verantwortlich für den Inhalt dieser Website und Anbieter
-            der dargestellten Dienstleistungen ist:
-        </p>
+            <h1>Impressum</h1>
 
-        <div class="contact-box">
-
-            <strong>Cédric Juillot</strong>
-
-            Triftstraße 29<br>
-            60528 Frankfurt am Main<br>
-            Deutschland
+            <p>
+                Angaben gemäß § 5 DDG
+            </p>
 
         </div>
 
     </section>
 
 
-    <!-- Kontakt -->
-    <section class="section">
+    <!-- =========================
+         INHALT
+    ========================= -->
 
-        <h2>Kontakt</h2>
+    <main>
 
-        <div class="contact-box">
 
-            <strong>E-Mail</strong>
+        <!-- Anbieter -->
 
-            <a href="mailto:[E-Mail-Adresse]">
-                cedric.juillot@web.de
+        <section class="section">
+
+            <h2>Angaben zum Anbieter</h2>
+
+            <p>
+                Verantwortlich für den Inhalt dieser Website und Anbieter
+                der dargestellten Dienstleistungen ist:
+            </p>
+
+            <div class="contact-box">
+
+                <strong>Cédric Juillot</strong>
+
+                Triftstraße 29<br>
+                60528 Frankfurt am Main<br>
+                Deutschland
+
+            </div>
+
+        </section>
+
+
+        <!-- Kontakt -->
+
+        <section class="section">
+
+            <h2>Kontakt</h2>
+
+            <div class="contact-box">
+
+                <strong>E-Mail</strong>
+
+                <a href="mailto:cedric.juillot@web.de">
+                    cedric.juillot@web.de
+                </a>
+
+                <br><br>
+
+                <strong>Telefon</strong>
+
+                <a href="tel:+4917670816979">
+                    0176 70816979
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Steuer -->
+
+        <section class="section">
+
+            <h2>Umsatzsteuer</h2>
+
+            <p>
+                Umsatzsteuer-Identifikationsnummer gemäß § 27a
+                Umsatzsteuergesetz:
+            </p>
+
+            <div class="contact-box">
+
+                <strong>USt-IdNr.</strong>
+
+                xxxxxxxxxxxxxxxxxx
+
+            </div>
+
+        </section>
+
+
+        <!-- Verantwortlich -->
+
+        <section class="section">
+
+            <h2>Verantwortlich für den Inhalt</h2>
+
+            <p>
+                Verantwortlich für den Inhalt nach den allgemeinen
+                gesetzlichen Vorschriften ist:
+            </p>
+
+            <div class="contact-box">
+
+                <strong>Cédric Juillot</strong>
+
+                Triftstraße 29<br>
+                60528 Frankfurt am Main<br>
+                Deutschland
+
+            </div>
+
+        </section>
+
+
+        <!-- Haftung für Inhalte -->
+
+        <section class="section">
+
+            <h2>Haftung für Inhalte</h2>
+
+            <p>
+                Als Diensteanbieter bin ich gemäß den allgemeinen Gesetzen
+                für eigene Inhalte auf dieser Website verantwortlich.
+                Ich bin jedoch nicht verpflichtet, übermittelte oder
+                gespeicherte fremde Informationen zu überwachen oder nach
+                Umständen zu suchen, die auf eine rechtswidrige Tätigkeit
+                hinweisen.
+            </p>
+
+            <p>
+                Verpflichtungen zur Entfernung oder Sperrung der Nutzung
+                von Informationen nach den allgemeinen Gesetzen bleiben
+                hiervon unberührt.
+            </p>
+
+        </section>
+
+
+        <!-- Haftung für Links -->
+
+        <section class="section">
+
+            <h2>Haftung für Links</h2>
+
+            <p>
+                Diese Website kann gegebenenfalls Links zu externen
+                Websites Dritter enthalten. Auf deren Inhalte habe ich
+                keinen Einfluss.
+            </p>
+
+            <p>
+                Für die Inhalte der verlinkten Seiten ist stets der
+                jeweilige Anbieter oder Betreiber verantwortlich.
+                Eine permanente inhaltliche Kontrolle der verlinkten
+                Seiten ist ohne konkrete Anhaltspunkte einer
+                Rechtsverletzung nicht zumutbar.
+            </p>
+
+            <p>
+                Bei Bekanntwerden von Rechtsverletzungen werde ich
+                entsprechende Links unverzüglich entfernen.
+            </p>
+
+        </section>
+
+
+        <!-- Urheberrecht -->
+
+        <section class="section">
+
+            <h2>Urheberrecht</h2>
+
+            <p>
+                Die auf dieser Website erstellten Inhalte und Werke
+                unterliegen dem deutschen Urheberrecht.
+            </p>
+
+            <p>
+                Die Vervielfältigung, Bearbeitung, Verbreitung und jede
+                Art der Verwertung außerhalb der Grenzen des Urheberrechts
+                bedürfen der vorherigen schriftlichen Zustimmung des
+                jeweiligen Rechteinhabers.
+            </p>
+
+            <p>
+                Soweit die Inhalte auf dieser Website nicht vom Betreiber
+                erstellt wurden, werden die Urheberrechte Dritter beachtet.
+                Insbesondere werden Inhalte Dritter als solche gekennzeichnet,
+                soweit dies erforderlich ist.
+            </p>
+
+        </section>
+
+
+        <!-- Stand -->
+
+        <section class="section">
+
+            <h2>Stand</h2>
+
+            <p>
+                Stand: <strong>August 2026</strong>
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Cédric Juillot |
+            <a href="datenschutz.html">
+                Datenschutzerklärung
             </a>
-
-            <br><br>
-
-            <strong>Telefon</strong>
-
-            <a href="tel:[Telefonnummer]">
-                0176 70816979
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- Steuer -->
-    <section class="section">
-
-        <h2>Umsatzsteuer</h2>
-
-        <p>
-            Umsatzsteuer-Identifikationsnummer gemäß § 27a
-            Umsatzsteuergesetz: xxxxxxxxxxxx <!--Ust-ID noch rein-->
         </p>
 
-        <div class="contact-box">
-
-            <strong>USt-IdNr.</strong>
-
-            xxxxxxxxxxxxxxxxxx <!--Ust-ID noch rein-->
-
-        </div>
-
-    </section>
+    </footer>
 
 
-    <!-- Verantwortlich -->
-    <section class="section">
+    <!-- =========================
+         PFEIL NACH OBEN
+    ========================= -->
 
-        <h2>Verantwortlich für den Inhalt</h2>
-
-        <p>
-            Verantwortlich für den Inhalt nach den allgemeinen
-            gesetzlichen Vorschriften ist:
-        </p>
-
-        <div class="contact-box">
-
-            <strong>Cédric Juillot</strong>
-
-            Triftstraße 29<br>
-            60528 Frankfurt am Main<br>
-            Deutschland
-
-        </div>
-
-    </section>
+    <button id="backToTop" aria-label="Nach oben">
+        ↑
+    </button>
 
 
-    <!-- Haftung -->
-    <section class="section">
+    <script>
 
-        <h2>Haftung für Inhalte</h2>
-
-        <p>
-            Als Diensteanbieter bin ich gemäß den allgemeinen Gesetzen
-            für eigene Inhalte auf dieser Website verantwortlich.
-            Ich bin jedoch nicht verpflichtet, übermittelte oder
-            gespeicherte fremde Informationen zu überwachen oder nach
-            Umständen zu suchen, die auf eine rechtswidrige Tätigkeit
-            hinweisen.
-        </p>
-
-        <p>
-            Verpflichtungen zur Entfernung oder Sperrung der Nutzung
-            von Informationen nach den allgemeinen Gesetzen bleiben
-            hiervon unberührt.
-        </p>
-
-    </section>
+        const backToTop = document.getElementById("backToTop");
 
 
-    <!-- Haftung Links -->
-    <section class="section">
+        window.addEventListener("scroll", function () {
 
-        <h2>Haftung für Links</h2>
+            if (window.scrollY > 400) {
 
-        <p>
-            Diese Website kann gegebenenfalls Links zu externen
-            Websites Dritter enthalten. Auf deren Inhalte habe ich
-            keinen Einfluss.
-        </p>
+                backToTop.style.display = "flex";
 
-        <p>
-            Für die Inhalte der verlinkten Seiten ist stets der
-            jeweilige Anbieter oder Betreiber verantwortlich.
-            Eine permanente inhaltliche Kontrolle der verlinkten
-            Seiten ist ohne konkrete Anhaltspunkte einer
-            Rechtsverletzung nicht zumutbar.
-        </p>
+            } else {
 
-        <p>
-            Bei Bekanntwerden von Rechtsverletzungen werde ich
-            entsprechende Links unverzüglich entfernen.
-        </p>
+                backToTop.style.display = "none";
 
-    </section>
+            }
+
+        });
 
 
-    <!-- Urheberrecht -->
-    <section class="section">
+        backToTop.addEventListener("click", function () {
 
-        <h2>Urheberrecht</h2>
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
 
-        <p>
-            Die auf dieser Website erstellten Inhalte und Werke
-            unterliegen dem deutschen Urheberrecht.
-        </p>
-
-        <p>
-            Die Vervielfältigung, Bearbeitung, Verbreitung und jede
-            Art der Verwertung außerhalb der Grenzen des Urheberrechts
-            bedürfen der vorherigen schriftlichen Zustimmung des
-            jeweiligen Rechteinhabers.
-        </p>
-
-        <p>
-            Soweit die Inhalte auf dieser Website nicht vom Betreiber
-            erstellt wurden, werden die Urheberrechte Dritter beachtet.
-            Insbesondere werden Inhalte Dritter als solche gekennzeichnet,
-            soweit dies erforderlich ist.
-        </p>
-
-    </section>
+        });
 
 
-    <!-- Stand -->
-    <section class="section">
+        // Beim Aktualisieren immer ganz oben starten
 
-        <h2>Stand</h2>
-
-        <p>
-            Stand: <strong>August 2026</strong>
-        </p>
-
-    </section>
-
-</main>
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
 
 
-<footer>
-    <p>
-        © 2026 Cédric Juillot |
-        <a href="datenschutz.html">Datenschutzerklärung</a>
-    </p>
-</footer>
+        window.addEventListener("load", function () {
 
-<!-- Pfeil nach oben -->
-<button id="backToTop" aria-label="Nach oben">
-    ↑
-</button>
+            window.scrollTo(0, 0);
 
-<script>
-const backToTop = document.getElementById("backToTop");
+        });
 
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 400) {
-        backToTop.style.display = "flex";
-    } else {
-        backToTop.style.display = "none";
-    }
-});
+    </script>
 
-backToTop.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-
-// Beim Aktualisieren immer ganz oben starten
-if ("scrollRestoration" in history) {
-    history.scrollRestoration = "manual";
-}
-
-window.addEventListener("load", function () {
-    window.scrollTo(0, 0);
-});
-</script>
 
 </body>
 </html>

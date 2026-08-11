@@ -26,49 +26,40 @@
             line-height: 1.7;
         }
 
-/* HEADER */
-header {
-    background: #aaa39f;
-    color: black;
-    padding: 15px 20px;
-}
+        /* HEADER */
+        header {
+            background: #aaa39f;
+            padding: 12px 40px;
+        }
 
-.header-inner {
-    max-width: 1050px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .header-inner {
+            max-width: 1050px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
 
-/* LOGO */
-.logo img {
-    height: 100px;
-    width: auto;
-    display: block;
-}
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
 
-/* NAVIGATION */
-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+        nav a {
+            color: black;
+            text-decoration: underline;
+            font-size: 15px;
+            transition: opacity 0.2s ease;
+        }
 
-nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: opacity 0.2s ease;
-}
-
-nav a:hover {
-    opacity: 0.7;
-}
-
-nav a.active {
-    opacity: 0.6;
-}
+        nav a:hover {
+            opacity: 0.7;
+        }
 
         /* HERO */
         .hero {
@@ -95,35 +86,15 @@ nav a.active {
             font-size: 1.05rem;
         }
 
-/*Navigation*/
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: opacity 0.2s ease;
-}
-
-nav a:hover {
-    opacity: 0.7;
-}
-
-nav a.active {
-    opacity: 0.6;
-}
-
-
         /* CONTENT */
         main {
             max-width: 900px;
             margin: 0 auto;
             padding: 70px 20px 90px;
+        }
+
+        .intro {
+            margin-bottom: 30px;
         }
 
         .section {
@@ -160,6 +131,14 @@ nav a.active {
             margin-bottom: 0;
         }
 
+        .section ul {
+            margin: 0 0 16px 20px;
+        }
+
+        .section li {
+            margin-bottom: 5px;
+        }
+
         .contact-box {
             background: #f7f5f0;
             border-radius: 8px;
@@ -181,194 +160,152 @@ nav a.active {
             text-decoration: underline;
         }
 
-        .placeholder {
-            color: #aaa39f;
-            font-weight: 600;
+        /* FOOTER */
+        footer {
+            background: #aaa39f;
+            color: black;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
         }
 
-       
-/* FOOTER */
-footer {
-    background: #aaa39f;
-    color: black;
-    padding: 35px 20px;
-    text-align: center;
-}
+        footer p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
 
-.footer-inner {
-    max-width: 900px;
-    margin: 0 auto;
-}
+        footer p:last-child {
+            margin-bottom: 0;
+        }
 
-footer p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-}
+        footer a {
+            color: black;
+            text-decoration: none;
+            margin: 0 8px;
+        }
 
-footer a {
-    color: black;
-    text-decoration: none;
-}
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-footer a:hover {
-    text-decoration: underline;
-}
+        /* PFEIL NACH OBEN */
+        #backToTop {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 50%;
+            background: #aaa39f;
+            color: black;
+            font-size: 24px;
+            line-height: 1;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
 
-/* PFEIL NACH OBEN */
-#backToTop {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
+        #backToTop:hover {
+            transform: translateY(-3px);
+        }
 
-    width: 45px;
-    height: 45px;
+        /* MOBILE */
+        @media (max-width: 700px) {
 
-    border: none;
-    border-radius: 50%;
+            header {
+                padding: 10px 15px;
+            }
 
-    background: #aaa39f;
-    color: black;
+            .header-inner {
+                justify-content: flex-end;
+            }
 
-    font-size: 24px;
-    line-height: 1;
+            nav {
+                width: 100%;
+                justify-content: flex-end;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
 
-    display: none;
-    align-items: center;
-    justify-content: center;
+            nav a {
+                font-size: 14px;
+            }
 
-    cursor: pointer;
+            .hero {
+                padding: 45px 18px 50px;
+            }
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            .hero h1 {
+                font-size: 2.2rem;
+            }
 
-    z-index: 9999;
+            .hero p {
+                font-size: 1rem;
+            }
 
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
+            main {
+                padding: 35px 12px 50px;
+            }
 
-#backToTop:hover {
-    transform: translateY(-3px);
-}
+            .intro {
+                padding: 0 8px;
+                margin-bottom: 25px;
+            }
 
-/* MOBILE */
-@media (max-width: 700px) {
+            .section {
+                padding: 25px 20px;
+                margin-bottom: 18px;
+                border-radius: 8px;
+            }
 
-    header {
-        padding: 15px 15px 20px;
-    }
+            .section h2 {
+                font-size: 1.35rem;
+            }
 
-    .header-inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+            .section p,
+            .section li {
+                font-size: 0.95rem;
+            }
 
-    .logo img {
-        height: 75px;
-        max-width: 100%;
-    }
+            .contact-box {
+                padding: 18px;
+                overflow-wrap: break-word;
+            }
 
-    nav {
-        width: 100%;
-        justify-content: center;
-        gap: 12px;
-        margin-top: 15px;
-        flex-wrap: wrap;
-    }
+            footer {
+                padding: 20px 15px;
+            }
 
-    nav a {
-        font-size: 0.9rem;
-    }
+            footer p {
+                font-size: 0.85rem;
+                line-height: 1.7;
+            }
 
-    .hero {
-        padding: 45px 18px 50px;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    main {
-        padding: 35px 12px 50px;
-    }
-
-    .intro {
-        padding: 0 8px;
-        margin-bottom: 25px;
-    }
-
-    .section {
-        padding: 25px 20px;
-        margin-bottom: 18px;
-        border-radius: 8px;
-    }
-
-    .section h2 {
-        font-size: 1.35rem;
-    }
-
-    .section p,
-    .section li {
-        font-size: 0.95rem;
-    }
-
-    .contact-box {
-        padding: 18px;
-    }
-
-    .contact-box {
-        overflow-wrap: break-word;
-    }
-
-    /* FOOTER */
-footer {
-    background: #aaa39f;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer a {
-    color: black;
-    margin: 0 8px;
-}
-
-    #backToTop {
-        width: 42px;
-        height: 42px;
-        right: 15px;
-        bottom: 15px;
-        font-size: 21px;
-    }
-}
-   
-
+            #backToTop {
+                width: 42px;
+                height: 42px;
+                right: 15px;
+                bottom: 15px;
+                font-size: 21px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-<!--Header-->
 <header>
     <div class="header-inner">
-
-        <a href="index.html" class="logo">
-            <img src="pictures/logo_transparent.png" alt="Cédric Juillot – Mietkoch">
-        </a>
-
         <nav>
             <a href="index.html">Zurück zur Startseite</a>
         </nav>
-
     </div>
 </header>
-
-
-
 
 <section class="hero">
     <div class="hero-content">
@@ -378,7 +315,6 @@ footer a {
         </p>
     </div>
 </section>
-
 
 <main>
 
@@ -391,7 +327,6 @@ footer a {
             verarbeitet werden.
         </p>
     </div>
-
 
     <!-- 1 -->
     <section class="section">
@@ -410,13 +345,12 @@ footer a {
             Deutschland<br><br>
 
             <strong>E-Mail</strong>
-           cedric.juillot@web.de<br><br>
+            cedric.juillot@web.de<br><br>
 
             <strong>Telefon</strong>
-           0176 70816979
+            0176 70816979
         </div>
     </section>
-
 
     <!-- 2 -->
     <section class="section">
@@ -443,7 +377,6 @@ footer a {
         </p>
     </section>
 
-
     <!-- 3 -->
     <section class="section">
         <h2>3. Besuch meiner Website</h2>
@@ -468,7 +401,6 @@ footer a {
             Leistungen sowie der Möglichkeit, mit mir Kontakt aufzunehmen.
         </p>
     </section>
-
 
     <!-- 4 -->
     <section class="section">
@@ -509,7 +441,6 @@ footer a {
         </p>
     </section>
 
-
     <!-- 5 -->
     <section class="section">
         <h2>5. Kontaktaufnahme per E-Mail und Telefon</h2>
@@ -537,7 +468,6 @@ footer a {
             die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
         </p>
     </section>
-
 
     <!-- 6 -->
     <section class="section">
@@ -577,7 +507,6 @@ footer a {
         </p>
     </section>
 
-
     <!-- 7 -->
     <section class="section">
         <h2>7. Speicherdauer</h2>
@@ -602,7 +531,6 @@ footer a {
         </p>
     </section>
 
-
     <!-- 8 -->
     <section class="section">
         <h2>8. Weitergabe von Daten</h2>
@@ -621,7 +549,6 @@ footer a {
             Rahmen der gesetzlichen Voraussetzungen.
         </p>
     </section>
-
 
     <!-- 9 -->
     <section class="section">
@@ -668,7 +595,6 @@ footer a {
         </p>
     </section>
 
-
     <!-- 10 -->
     <section class="section">
         <h2>10. Beschwerderecht bei einer Aufsichtsbehörde</h2>
@@ -685,7 +611,6 @@ footer a {
         </p>
     </section>
 
-
     <!-- 11 -->
     <section class="section">
         <h2>11. Keine automatisierte Entscheidungsfindung</h2>
@@ -695,7 +620,6 @@ footer a {
             im Sinne von Art. 22 DSGVO findet nicht statt.
         </p>
     </section>
-
 
     <!-- 12 -->
     <section class="section">
@@ -707,7 +631,6 @@ footer a {
     </section>
 
 </main>
-
 
 <footer>
     <p>
@@ -722,31 +645,31 @@ footer a {
 </button>
 
 <script>
-const backToTop = document.getElementById("backToTop");
+    const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 400) {
-        backToTop.style.display = "flex";
-    } else {
-        backToTop.style.display = "none";
-    }
-});
-
-backToTop.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+            backToTop.style.display = "flex";
+        } else {
+            backToTop.style.display = "none";
+        }
     });
-});
 
-// Beim Aktualisieren immer ganz oben starten
-if ("scrollRestoration" in history) {
-    history.scrollRestoration = "manual";
-}
+    backToTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
 
-window.addEventListener("load", function () {
-    window.scrollTo(0, 0);
-});
+    // Beim Aktualisieren immer ganz oben starten
+    if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+    }
+
+    window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+    });
 </script>
 
 </body>
