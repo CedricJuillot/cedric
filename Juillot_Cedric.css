@@ -65,21 +65,14 @@ header {
     box-sizing: border-box;
 }
 
-/* LOGO LINKS */
-.logo {
+header {
+    background: #aaa39f;
+    padding: 15px 40px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
-.logo img {
-    height: 100px;
-    width: auto;
-    display: block;
-}
-
-/* MENÜ RECHTS */
 nav {
     display: flex;
     align-items: center;
@@ -394,6 +387,23 @@ h2 {
 /* =========================
    MOBILE
 ========================= */
+
+@media (max-width: 700px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 800px) {
 
