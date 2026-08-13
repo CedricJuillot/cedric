@@ -481,10 +481,13 @@
             <h2>Kontaktformular</h2>
 
 
-            <form action="https://formsubmit.co/3a342dde8d76e53aa0ea8687e52c8071" method="POST">
+    <form id="kontakt-formular" action="https://formsubmit.co/cedric.juillot@web.de" method="POST">
     <input type="text" name="_honey" style="display:none">
     <input type="hidden" name="_captcha" value="false">
 
+    <!-- Automatische Antwort -->
+
+    <input type="hidden" name="_autoresponse" id="autoresponseInput" value="">
 
                 <div class="form-group">
 
@@ -587,6 +590,30 @@
 
 
             </form>
+
+            <script>
+
+    <!--Automatische Antwort JavaScript-->
+    
+  document.getElementById('kontakt-formular').addEventListener('submit', function() {
+    // Holt den eingegebenen Namen und die Nachricht
+    var kundenName = document.getElementById('name').value;
+    var kundenNachricht = document.getElementById('nachricht').value;
+
+    // Baut den Text für die Bestätigungs-E-Mail zusammen
+    var eMailText = "Hallo " + kundenName + ",\n\n" +
+                    "vielen Dank für Deine Anfrage! Ich habe Deine Nachricht erhalten und werde mich in Kürze bei Dir melden.\n\n" +
+                    "----------------------------------------\n" +
+                    "Deine Nachricht an mich:\n" +
+                    "\"" + kundenNachricht + "\"\n" +
+                    "----------------------------------------\n\n" +
+                    "Viele Grüße,\n" +
+                    "Cédric Juillot";
+
+    // Schreibt den fertig zusammengebauten Text in das Formularfeld
+    document.getElementById('autoresponseInput').value = eMailText;
+  });
+</script>
 
         </div>
 
