@@ -65,6 +65,7 @@
         <a href="#leistungen">Leistungen</a>
         <a href="#ueber-mich">Über mich</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="faq.html">Q&A</a>
 
     </nav>
 
@@ -594,7 +595,7 @@
             <script>
 
     <!--Automatische Antwort JavaScript-->
-    
+
   document.getElementById('kontakt-formular').addEventListener('submit', function() {
     // Holt den eingegebenen Namen und die Nachricht
     var kundenName = document.getElementById('name').value;
@@ -916,8 +917,10 @@ if ("scrollRestoration" in history) {
 
 
 window.addEventListener("load", function () {
+    if (!window.location.hash) {
 
     window.scrollTo(0, 0);
+    }
 
 });
 
