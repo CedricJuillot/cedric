@@ -7,8 +7,8 @@
     <title>Q&A | Mietkoch</title>
     <meta name="description" content="Häufig gestellte Fragen und Antworten zu meiner Dienstleistung als Mietkoch">
 
-       <link rel="icon" type="image/png" sizes="32x32" href="pictures/logo_transparent.png">
-<link rel="apple-touch-icon" sizes="180x180" href="pictures/logo_transparent.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/logo_transparent.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures/logo_transparent.png">
 
     <style>
         * {
@@ -39,8 +39,14 @@
             max-width: 1050px;
             margin: 0 auto;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
+        }
+
+        .logo img {
+            height: 45px;
+            width: auto;
+            display: block;
         }
 
         /* NAVIGATION */
@@ -190,27 +196,6 @@
             margin-bottom: 5px;
         }
 
-        .contact-box {
-            background: #f7f5f0;
-            border-radius: 8px;
-            padding: 25px;
-            margin-top: 20px;
-        }
-
-        .contact-box strong {
-            display: block;
-            margin-bottom: 3px;
-        }
-
-        .contact-box a {
-            color: #292929;
-            text-decoration: none;
-        }
-
-        .contact-box a:hover {
-            text-decoration: underline;
-        }
-
         /* FOOTER */
         footer {
             background: #aaa39f;
@@ -272,15 +257,8 @@
                 padding: 10px 15px;
             }
 
-            .header-inner {
-                justify-content: flex-end;
-            }
-
-            nav {
-                width: 100%;
-                justify-content: flex-end;
-                gap: 12px;
-                flex-wrap: wrap;
+            .logo img {
+                height: 38px;
             }
 
             nav a {
@@ -327,11 +305,6 @@
                 font-size: 0.95rem;
             }
 
-            .contact-box {
-                padding: 18px;
-                overflow-wrap: break-word;
-            }
-
             footer {
                 padding: 20px 15px;
             }
@@ -350,54 +323,49 @@
             }
         }
 
-        /*Button zum Kontaktformular*/
-
         /* CTA SECTION & BUTTON DESIGN */
-.cta-section {
-    text-align: center;
-    cursor: default;
-    padding: 45px 30px;
-}
+        .cta-section {
+            text-align: center;
+            cursor: default;
+            padding: 45px 30px;
+        }
 
-.cta-section h2::after {
-    margin: 12px auto 0; /* Unterstrich zentrieren */
-}
+        .cta-section h2::after {
+            margin: 12px auto 0;
+        }
 
-.btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    background: #aaa39f;
-    color: black;
-    text-decoration: none;
-    font-size: 1.05rem;
-    font-weight: 500;
-    padding: 16px 36px;
-    border-radius: 50px; /* Abgerundete Pillenform */
-    margin-top: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #aaa39f;
+            color: black;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 500;
+            padding: 16px 36px;
+            border-radius: 50px;
+            margin-top: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-/* Hover-Effekt: Wandert leicht nach oben & verstärkt Schatten */
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
 
-/* Der Pfeil gleitet beim Drüberfahren leicht nach rechts */
-.btn-primary .arrow {
-    font-size: 1.2rem;
-    line-height: 1;
-    transition: transform 0.3s ease;
-}
+        .btn-primary .arrow {
+            font-size: 1.2rem;
+            line-height: 1;
+            transition: transform 0.3s ease;
+        }
 
-.btn-primary:hover .arrow {
-    transform: translateX(5px);
-}
-
+        .btn-primary:hover .arrow {
+            transform: translateX(5px);
+        }
     </style>
 </head>
 
@@ -405,6 +373,9 @@
 
 <header>
     <div class="header-inner">
+        <a href="index.html" class="logo">
+            <img src="pictures/logo_transparent_klein.png" alt="Mietkoch Cédric Juillot Logo">
+        </a>
         <nav>
             <a href="index.html">Zurück zur Startseite</a>
         </nav>
@@ -429,36 +400,28 @@
         </p>
     </div>
 
-<!-- Frage 1 -->
+    <!-- Frage 1 -->
     <details class="section">
         <summary>
             <h2>1. Wie läuft der Buchungsprozess ab?</h2>
         </summary>
         <div class="faq-content">
-            <p>
-                <ul>
-                    <li><strong>1. Unverbindliche Anfrage senden</strong></li>
+            <ul>
+                <li><strong>Unverbindliche Anfrage senden</strong></li>
+                <p>Kontaktiere mich per E-Mail, Telefon/WhatsApp oder über das Kontaktformular. Gib am besten direkt das gewünschte Datum, die Schichtzeiten, den Einsatzort und die Art des Betriebs (z. B. à la carte, Catering, Event) an.</p>
 
-<p>Kontaktiere mich per E-Mail, Telefon/WhatsApp oder über das Kontaktformular. Gib am besten direkt das gewünschte Datum, die Schichtzeiten, den Einsatzort und die Art des Betriebs (z. B. à la carte, Catering, Event) an.</p>
+                <li><strong>2. Verfügbarkeit & Angebot erhalten</strong></li>
+                <p>Ich prüfe umgehend meinen Kalender und melde mich innerhalb von 24 Stunden mit Rückfragen oder einem passenden Festpreis-/Stundensatz-Angebot bei dir.</p>
 
-<li><strong>2. Verfügbarkeit & Angebot erhalten</strong></li>
+                <li><strong>3. Bestätigung</strong></li>
+                <p>Passt das Angebot für dich, bestätige ich den Einsatz verbindlich. Alle wichtigen Details stimmen wir kurz vorher ab.</p>
 
-<p>Ich prüfe umgehend meinen Kalender und melde mich innerhalb von 24 Stunden mit Rückfragen oder einem passenden Festpreis-/Stundensatz-Angebot bei dir.</p>
+                <li><strong>4. Einsatz vor Ort</strong></li>
+                <p>Ich erscheine pünktlich, eingearbeitet nach Briefing und einsatzbereit in deiner Küche – egal ob als Unterstützung für die Spitzenabdeckung oder Ausfallvertretung.</p>
 
-<li><strong>3. Bestätigung</strong></li>
-
-<p>Passt das Angebot für dich, bestätige ich den Einsatz verbindlich. Alle wichtigen Details stimmen wir kurz vorher ab.</p>
-
-<li><strong>4. Einsatz vor Ort</strong></li>
-
-<p>Ich erscheine pünktlich, eingearbeitet nach Briefing und einsatzbereit in deiner Küche – egal ob als Unterstützung für die Spitzenabdeckung oder Ausfallvertretung.</p>
-
-<li><strong>5. Abrechnung</strong></li>
-
-<p>Nach Abschluss des Einsatztages oder der Buchungsperiode erhältst du eine ordnungsgemäße Rechnung ohne versteckte Zusatzkosten.</p>
-
-                </ul>
-            </p>
+                <li><strong>5. Abrechnung</strong></li>
+                <p>Nach Abschluss des Einsatztages oder der Buchungsperiode erhältst du eine ordnungsgemäße Rechnung ohne versteckte Zusatzkosten.</p>
+            </ul>
         </div>
     </details>
 
@@ -486,11 +449,10 @@
             <p>
                 Ich erscheine stets mit kompletter, sauberer Kochkleidung sowie meinem eigenen professionellen Messer-Set und grundlegenden Handwerkzeugen. Große Geräte und Posten-Equipment nutze ich direkt bei euch vor Ort.
             </p>
-    
         </div>
     </details>
 
-    <!-- Frage 4-->
+    <!-- Frage 4 -->
     <details class="section">
         <summary>
             <h2>4. Für welche Anlässe kann ich dich buchen?</h2>
@@ -499,7 +461,7 @@
             <p>Mein Angebot richtet sich an verschiedene Bereiche:</p>
             <ul>
                 <li>Unterstützung von Restaurants für den laufenden Küchenbetrieb bei personellen Engpässen oder erhöhtem Arbeitsaufkommen</li>
-                <li>Unterstützung von Cateringunternehmen </li>
+                <li>Unterstützung von Cateringunternehmen</li>
                 <li>Unterstützung von Gastronomiebetrieben bei Veranstaltungen wie Hochzeiten, Firmenfeiern etc.</li>
             </ul>
         </div>
@@ -517,7 +479,6 @@
         </div>
     </details>
 
-
     <!-- Frage 6 -->
     <details class="section">
         <summary>
@@ -525,7 +486,7 @@
         </summary>
         <div class="faq-content">
             <p>
-                Meine Einsatzgebiete liegen im Raum Frankfurt am Main, Wiesbaden, Mainz und dem gesamten Rhein-Main-Gebiet. 
+                Meine Einsatzgebiete liegen im Raum Frankfurt am Main, Wiesbaden, Mainz und dem gesamten Rhein-Main-Gebiet.
             </p>
         </div>
     </details>

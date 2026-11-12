@@ -7,8 +7,8 @@
     <title>Impressum | Mietkoch</title>
     <meta name="description" content="Impressum des Mietkoch-Unternehmens.">
 
-     <link rel="icon" type="image/png" sizes="32x32" href="pictures/logo_transparent.png">
-<link rel="apple-touch-icon" sizes="180x180" href="pictures/logo_transparent.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/logo_transparent.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures/logo_transparent.png">
 
     <style>
         * {
@@ -45,8 +45,14 @@
             margin: 0 auto;
 
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
+        }
+
+        .logo img {
+            height: 45px;
+            width: auto;
+            display: block;
         }
 
         nav {
@@ -253,8 +259,8 @@
                 padding: 10px 15px;
             }
 
-            .header-inner {
-                justify-content: flex-end;
+            .logo img {
+                height: 38px;
             }
 
             nav {
@@ -341,6 +347,10 @@
     <header>
 
         <div class="header-inner">
+
+            <a href="index.html" class="logo">
+                <img src="pictures/logo_transparent_klein.png" alt="Mietkoch Cédric Juillot Logo">
+            </a>
 
             <nav>
                 <a href="index.html">
